@@ -1,37 +1,32 @@
-// Writes an interface
 interface Student {
-    firstName: string;
-    lastName: string;
-    age: number;
-    location: string;
+	firstName: string;
+	lastName: string;
+	age: number;
+	location: string;
 }
 
-// Creates 2 students
 const student1: Student = {
-  firstName: 'Terry',
-  lastName: 'Sophia',
-  age: 20,
-  location: 'New York'
+	firstName: "Ayoub",
+	lastName: "Jrindou",
+	age: 33,
+	location: "Casalanca"
 };
 
 const student2: Student = {
-  firstName: 'Bella',
-  lastName: 'TheCat',
-  age: 22,
-  location: 'Los Angeles'
+        firstName: "Hamza",
+        lastName: "Yassine",
+        age: 40,
+        location: "Tetouane"
 };
 
-// Creates an array studentsList
 const studentsList: Student[] = [student1, student2];
 
-// Renders table using Vanilla JavaScript
 const table = document.createElement('table');
 const tbody = document.createElement('tbody');
 
 table.style.background = "pink";
 table.appendChild(tbody);
 
-// Appends new row to the table
 studentsList.forEach((student: Student): void => {
   const row = document.createElement('tr');
   const nameCell = document.createElement('td');
@@ -49,6 +44,5 @@ studentsList.forEach((student: Student): void => {
   row.appendChild(locationCell);
   tbody.appendChild(row);
 });
-
 
 document.body.appendChild(table);

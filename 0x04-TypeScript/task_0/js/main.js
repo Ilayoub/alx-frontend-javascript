@@ -1,15 +1,15 @@
 // Create 2  students
 var student1 = {
-    firstName: 'Terry',
-    lastName: 'Sophia',
-    age: 20,
-    location: 'New York'
+    firstName: 'Ayoub',
+    lastName: 'Jrindou',
+    age: 33,
+    location: 'Casablanca'
 };
 var student2 = {
-    firstName: 'Bella',
-    lastName: 'TheCat',
+    firstName: 'Yassine',
+    lastName: 'Hamza',
     age: 22,
-    location: 'Los Angeles'
+    location: 'Tetouane'
 };
 // Create an array studentsList
 var studentsList = [student1, student2];
